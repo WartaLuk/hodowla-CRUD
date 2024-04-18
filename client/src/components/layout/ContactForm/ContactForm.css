@@ -1,0 +1,176 @@
+.contact {
+  background: #f0f0db;
+  padding: 30px;
+}
+
+h1 {
+  background: #f0f0db;
+  padding: 0 3px;
+  animation-name: contact-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.form-title {
+  position: relative;
+  top: 3%;
+  animation-name: contact-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.contact-link {
+  margin: 40px 0 15px 0;
+  animation-name: contact-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.contact-link a {
+  animation-name: contact-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background: #f0f0db;
+  border-style: double none none none;
+  border-width: 5px;
+  margin-bottom: 60px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55vw;
+  border: 5px double;
+  padding: 30px 0;
+}
+
+.contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-form form .form-group label {
+  z-index: 2;
+  position: relative;
+  align-self: center;
+  top: 25%;
+  left: -10%;
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: #f0f0db;
+  padding: 0 2px;
+  animation-name: label-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.contact-form form .form-group .message-label {
+  position: static;
+  align-self: start;
+  margin-left: 15%;
+  animation-name: message-label-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.contact-form form .form-group input,
+.contact-form form .form-group textarea:not(:last-of-type) {
+  height: 42px;
+  width: 30%;
+  border: 5px double;
+  padding: 3px;
+}
+
+.contact-form form .form-group textarea {
+  min-width: 50%;
+  max-width: 75%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 5px double;
+  border-radius: 0;
+  font-weight: 500;
+  animation-name: textarea-anim;
+  animation-duration: 3s;
+  animation-timing-function: easy-out;
+  animation-delay: 0.8s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+.contact-form button {
+  padding: 5px 10px;
+  margin-top: 20px;
+  align-self: center;
+  border: 5px double;
+}
+
+@keyframes contact-anim {
+  from {
+    background-color: transparent;
+    color: transparent;
+  }
+}
+
+@keyframes label-anim {
+  from {
+    left: 15%;
+    opacity: 0;
+  }
+}
+
+@keyframes textarea-anim {
+  from {
+    width: 0;
+    height: 10%;
+    opacity: 0.4;
+  }
+}
+
+@keyframes message-label-anim {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}

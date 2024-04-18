@@ -1,0 +1,78 @@
+@import "../../../variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  background-color: $color-two;
+
+.slider {
+  background-image: url("../../../img/slider-home.jpg");
+}
+.container {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  width: 70vw;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.about-us {
+  margin: 0;
+  padding: 30px;
+  background: $primary-color;
+  width: 100%;
+  color: $color-two;
+  border-top: 5px double $color-three;
+  .about-title {
+    padding: 40px 15px 15px 15px;
+  }
+  .about-subtitle,
+  .about-text {
+    padding: 15px 25% 40px 25%;
+    margin: 0;
+  }
+  a {
+    display: block;
+    color: $color-three;
+  }
+}
+.about-race {
+  margin: 0;
+  padding: 30px;
+  background-color: $secondary-color;
+  width: 100%;
+  color: $color-two;
+  border-top: 3px solid $color-three;
+  .about-title {
+    padding: 40px 15px 15px 15px;
+  }
+  .about-subtitle,
+  .about-text {
+    padding: 15px 25% 40px 25%;
+  }
+  .box {
+    padding: 30px;
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  img {
+    margin-right: 25px;
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-style: double none none double;
+    border-color: $color-three;
+    float: left;
+  }
+}
+@keyframes text-anim {
+  from {
+    width: 0;
+  }
+}
+}

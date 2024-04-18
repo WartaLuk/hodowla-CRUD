@@ -1,0 +1,59 @@
+@import "../../../variables.scss";
+
+.slider {
+  background-image: url("../../../img/slider-home.jpg");
+  height: 85vh;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.invation-container {
+  background: linear-gradient(
+    38deg,
+    hsl(144, 35%, 13%, 1),
+    hsl(144, 35%, 15%, 0.8) 50%,
+    hsl(144, 35%, 20%, 0.5) 80%,
+    transparent
+  );
+  height: 100%;
+}
+.text-box {
+  position: relative;
+  top: 25%;
+  color: $color-two;
+}
+.invation {
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+.name {
+  margin-bottom: 16px;
+  font-size: 60px;
+}
+.owner {
+  margin-bottom: 16px;
+  font-size: 40px;
+}
+.link-contact {
+  position: relative;
+  .link-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 35px;
+    padding: 5px 6px;
+    color: $color-two;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    border-color: $color-two;
+    border-style: double solid;
+    border-width: 5px;
+    transition: 4s;
+    width: 360px;
+    height: 80px;
+  }
+}
+.link-contact .link-btn:hover {
+  background: $primary-color;
+}

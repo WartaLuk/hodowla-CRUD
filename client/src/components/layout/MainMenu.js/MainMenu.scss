@@ -1,0 +1,26 @@
+@import "../../../variables.scss";
+
+.nav-brand h4,
+.nav-brand h6 {
+  color: $color-three;
+}
+.nav-brand h4:hover,
+.nav-brand h6:hover {
+  color: $color-l-three;
+}
+.nav-bar {
+  width: 100vw;
+  background: linear-gradient(38deg, $primary-color, $secondary-color);
+  opacity: 0.9;
+  z-index: 20;
+}
+.nav-btns {
+  padding-right: 30px;
+}
+.nav-btn h4 {
+  color: $color-two;
+}
+.nav-brand:hover,
+.nav-btn:hover h4 {
+  color: $color-three;
+}
